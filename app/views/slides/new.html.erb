@@ -1,0 +1,17 @@
+<%= render "slides/topnav" %>
+<div class="container">
+<div class="row">
+   <div class="col-sm-12">
+<h1> Create a slideshow </h1>
+<%= form_for :slide, url: slides_path do |f| %>
+   <p>
+   <%= f.label :title %><br>
+   <%= f.text_field :title %>
+   </p>
+   <p>
+   <%= f.submit "Create", :class=>"btn btn-primary"%>
+   </p>
+<% end %>
+</div>
+</div>
+</div>

@@ -1,0 +1,25 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body.welcome-controller, body[class*='devise/']{
+   background: url('index_bg.jpg') no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+body{
+   background-color:transparent;
+}
+
+body.welcome-controller, body[class*='devise/'] .row{
+   text-align:center;
+}
+
+.jumbotron{
+   background-color: rgba(0,0,0,0.8);
+   color:#f0f0f0;
+   text-align:center;
+
+}
