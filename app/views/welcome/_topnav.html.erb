@@ -16,6 +16,10 @@
    </ul>
    <ul class="nav navbar-nav navbar-right">
       <li>
+         <%= link_to "Feedback", "https://docs.google.com/forms/d/1wWJL8YUpSjOqwtehTSrMMmXYtLwetrEU49-fPrgGRqs/viewform" %>
+      </li>
+
+      <li>
          <%= link_to "Sign up", new_user_registration_path() %>
       </li>
    <% if user_signed_in? %>

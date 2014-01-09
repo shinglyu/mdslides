@@ -16,6 +16,10 @@
             <hr>
          </div>
       </div>
+      <% if @slides.size == 0 %>
+         <h2> &#8679 You don't have any slides yet, create one by clicking the "<b>+ Create</b>" button above. </h2>
+      <% end %>
+
       <% @slides.each do |slide| %>
       <div class="row">
          <div class="col-sm-6">
