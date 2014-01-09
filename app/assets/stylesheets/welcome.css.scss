@@ -11,6 +11,7 @@ body.welcome-controller, body[class*='devise/']{
 
 body{
    background-color:transparent;
+   color:#f0f0f0;
 }
 
 body.welcome-controller, body[class*='devise/'] .row{
@@ -21,5 +22,13 @@ body.welcome-controller, body[class*='devise/'] .row{
    background-color: rgba(0,0,0,0.8);
    color:#f0f0f0;
    text-align:center;
-
 }
+
+#demo_text, #demo_output{
+   height: 240pt;
+}
+
+#demo_row{
+   background-color: rgba(0,0,0,0.8);
+}
+
