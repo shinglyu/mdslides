@@ -15,6 +15,7 @@
 
         <div><%= f.label :password_confirmation %><br />
         <%= f.password_field :password_confirmation %></div>
+        <div><%= recaptcha_tags %></div>
 
         <div><%= f.submit "Sign up", :class=>"btn btn-default" %></div>
       <% end %>
