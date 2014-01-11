@@ -52,4 +52,3 @@ gem 'bootstrap-sass', '~> 3.0.3.0' #CSS Framework
 gem 'devise' #Authentication
 gem 'cancan' #Autorization
 
-gem 'recaptcha', :require => 'recaptcha/rails'
