@@ -169,11 +169,14 @@
 initReveal();
 
          //adjust height to fit screen
-         $("img").each(function(id){
-            otherHeight = $(this).parent().parent().height() - $(this).height();
-            reaminHeight = $(window).height() - otherHeight - 250;
-            $(this).css("max-height",  remainHeight);
-        })
+        window.onload = function(){
+           $("img").each(function(id){
+              var bottomMargin = $(window).height() * 0.02;
+              var remainHeight = $(window).height() - $(this).offset().top- bottomMargin;
+              $(this).css("max-height",  remainHeight);
+          })
+          
+        }
 
      </script>
  </body>
