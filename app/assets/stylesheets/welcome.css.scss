@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body.welcome-controller, body[class*='devise/']{
-   background: url('index_bg.jpg') no-repeat center center fixed; 
+   background: url('/assets/index_bg.jpg') no-repeat center center fixed; 
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
