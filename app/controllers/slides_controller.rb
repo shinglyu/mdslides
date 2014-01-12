@@ -15,10 +15,27 @@ class SlidesController < ApplicationController
    
    def create
       @slide = Slide.new(params[:slide].permit(:title))
-      @slide.md = '#' + params[:slide][:title] + "\n\n---\n"
+      if params[:use_demo] == "true"
+         demo_path = File.join(Rails.root, 'public',  'demo.md')
+         demo_md = File.read(demo_path)
+         @slide.md = demo_md
+      else
+         @slide.md = '#' + params[:slide][:title] + "\n\n---\n"
+      end
       @slide.user_id = current_user.id
       @slide.save
       redirect_to edit_slide_path(@slide)
+   end
+
+   def create_demo
+      @slide = Slide.new()
+      @slide.title = 'Getting Started'
+      demo_md = File.read("/demo.md")
+      @slide.md = demo_md
+      @slide.user_id = current_user.id
+      @slide.save
+      redirect_to edit_slide_path(@slide)
+      
    end
 
    def show

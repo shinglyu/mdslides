@@ -52,3 +52,7 @@ gem 'bootstrap-sass', '~> 3.0.3.0' #CSS Framework
 gem 'devise' #Authentication
 gem 'cancan' #Autorization
 
+# For postgreSQL
+gem 'yaml_db' 
+gem 'pg' 
+

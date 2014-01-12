@@ -6,7 +6,9 @@
 <%= form_for :slide, url: slides_path do |f| %>
    <p>
    <%= f.label :title %><br>
-   <%= f.text_field :title %>
+   <%= f.text_field :title %> <br>
+   <%= check_box_tag "use_demo", "true"%>
+   <%= label_tag "use_demo", "Include tutorial pages" %>
    </p>
    <p>
    <%= f.submit "Create", :class=>"btn btn-primary"%>

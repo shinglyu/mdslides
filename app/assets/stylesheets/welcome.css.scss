@@ -9,7 +9,7 @@ body.welcome-controller, body[class*='devise/']{
    background-size: cover;
 }
 
-body{
+body.welcome-controller{
    background-color:transparent;
    color:#f0f0f0;
 }

@@ -17,7 +17,8 @@
          </div>
       </div>
       <% if @slides.size == 0 %>
-         <h2> &#8679 You don't have any slides yet, create one by clicking the "<b>+ Create</b>" button above. </h2>
+         <h2> &#8679 You don't have any slides yet, create one by clicking the "<b>+ Create</b>" button above. (Tutorial Included!) </h2>
+         <h3>You can also read this <%= link_to 'Markdown syntax guide', 'http://daringfireball.net/projects/markdown/syntax' %> </h3>
       <% end %>
 
       <% @slides.each do |slide| %>

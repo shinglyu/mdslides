@@ -5,6 +5,7 @@ Server::Application.routes.draw do
 
    resources :slides do
       #post 'preview'
+      get 'create_demo'
    end
 
   # resources :welcome do
