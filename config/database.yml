@@ -5,9 +5,7 @@ development:
   encoding: unicode
   database: mdslides_development
   pool: 5
-  username: postgres 
-  password: 5j/ jp6au4a83
-  host: localhost
+  password: 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -17,15 +15,11 @@ test:
   encoding: unicode
   database: mdslides_test 
   pool: 5
-  username: postgres
-  password: 5j/ jp6au4a83
-  host: localhost
+  password: 
 
 production:
   adapter: postgresql
   encoding: unicode
   database: mdslides_production
   pool: 5
-  username: postgres
-  password: 5j/ jp6au4a83
-  host: localhost
+  password: 
