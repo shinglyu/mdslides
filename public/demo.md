@@ -83,5 +83,4 @@ $ \frac{x^2+y_f}{\sqrt{\pi}} = 3.198272$
 
 #Thank you!
 
-[Report bugs](#)   
-[Sing up for FREE](#)   
+[Report bugs](https://docs.google.com/forms/d/1wWJL8YUpSjOqwtehTSrMMmXYtLwetrEU49-fPrgGRqs/viewform)   
