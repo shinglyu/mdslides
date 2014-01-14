@@ -4,8 +4,10 @@ development:
   adapter: postgresql
   encoding: unicode
   database: mdslides_development
+  host: localhost
   pool: 5
-  password: 
+  username: postgres
+  password: hk4g4au4a83 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
