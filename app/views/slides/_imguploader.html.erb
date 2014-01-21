@@ -1,0 +1,41 @@
+   <!-- Modal -->
+   <div class="modal fade" id="imgUploader" tabindex="-1" role="dialog" aria-labelledby="imgUploaderLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+           <h4 class="modal-title" id="imgUploaderLabel">Upload an image</h4>
+         </div>
+         <div class="modal-body">
+
+         <%= form_tag(slide_path, :method => :post) do |f|  %>
+           <%= cl_image_upload_tag(:image_id) %>
+         <%  end %>
+
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+         </div>
+       </div><!-- /.modal-content -->
+     </div><!-- /.modal-dialog -->
+   </div><!-- /.modal -->
+
+<div class="modal fade" id="imgResult" tabindex="-1" role="dialog" aria-labelledby="imgResultLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+           <h4 class="modal-title" id="imgResultLabel">Upload Finished</h4>
+         </div>
+         <div class="modal-body">
+           <h5>Please <em>paste</em> this code to where you want the image to be.</h5>
+           <div class="well">
+             <h4 id='imgCode'></h4>
+           </div>
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-default" data-dismiss="modal">Done</button>
+         </div>
+       </div><!-- /.modal-content -->
+     </div><!-- /.modal-dialog -->
+   </div><!-- /.modal -->

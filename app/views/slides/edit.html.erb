@@ -5,6 +5,10 @@
       <%= form_for @slide, url: slide_path(@slide), method: :patch, remote: true, class: "update" do |f| %>
       <div class="row">
          <div class="col-sm-11">
+         <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#imgUploader">
+              <span class="glyphicon glyphicon-picture"></span> upload 
+         </button>
+
          <% if @slide.errors.any? %>
             <div id="error_explanation">
                <h2><%= pluralize(@slide.errors.count, "error") %> prohibited
@@ -31,8 +35,16 @@
    </div>
 
    <div class="col-sm-6">
+      <button type="button" class="btn btn-default btn-sm" >
+           <span class="glyphicon glyphicon-refresh"></span> 
+      </button>
+
       <iframe id="preview" src="<%= root_url + slide_path(@slide) %>"></iframe>
    </div>
+
+<%= render "slides/imguploader" %>
+
+ 
 </div>
 </div>
 

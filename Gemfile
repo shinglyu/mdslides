@@ -59,3 +59,6 @@ gem 'pg'
 gem 'rails_12factor', group: :production
 
 ruby "2.0.0"
+
+gem 'carrierwave'
+gem 'cloudinary'

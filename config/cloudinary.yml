@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: mdslides
+  api_key: '435443796681978'
+  api_secret: 9_E3YdhtVLwVzGuwqE_KBX1QHQg
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: mdslides
+  api_key: '435443796681978'
+  api_secret: 9_E3YdhtVLwVzGuwqE_KBX1QHQg
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: mdslides
+  api_key: '435443796681978'
+  api_secret: 9_E3YdhtVLwVzGuwqE_KBX1QHQg
+  enhance_image_tag: true
+  static_image_support: false
