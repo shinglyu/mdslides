@@ -23,10 +23,16 @@ function bindAutoRefresh(){
    $('textarea').mouseup(refresh)
 }
 
-function startup(){
-   bindAjax()
-   bindAutoRefresh()
+function bindRefreshBtn(){
+   $('#refresh').click(refresh);
 }
 
-$(document).ready(startup)
-$(document).on('page:load', startup)
+function startup(){
+   bindAjax();
+   bindAutoRefresh();
+   bindRefreshBtn();
+}
+
+addLoadEvent(startup)
+//$(document).ready(startup)
+//$(document).on('page:load', startup)

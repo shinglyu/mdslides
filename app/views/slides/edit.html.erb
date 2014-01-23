@@ -4,7 +4,7 @@
    <div class="col-sm-6">
       <%= form_for @slide, url: slide_path(@slide), method: :patch, remote: true, class: "update" do |f| %>
       <div class="row">
-         <div class="col-sm-11">
+         <div class="col-sm-12">
          <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#imgUploader">
               <span class="glyphicon glyphicon-picture"></span> upload 
          </button>
@@ -23,19 +23,18 @@
          <p>
          <%= f.text_area :md%>
          </p>
-         </div>
 
-         <div class="col-sm-1 col-nopad">
          <p>
-         <%= f.submit "=>", :class=>"btn btn-success"%>
+         <%= f.submit "=>", :class=>"btn btn-success refresh_btn"%>
          </p>
          </div>
+
       </div>
       <% end %>
    </div>
 
    <div class="col-sm-6">
-      <button type="button" class="btn btn-default btn-sm" >
+      <button type="button" class="btn btn-default btn-sm" id='refresh' >
            <span class="glyphicon glyphicon-refresh"></span> 
       </button>
 
