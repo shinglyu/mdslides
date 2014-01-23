@@ -10,9 +10,10 @@ function bindImguploader(){
          $("#imgUploader").modal('hide');
          $('#imgCode').html('![' + data.result.public_id + '](http://res.cloudinary.com/mdslides/image/upload/' + data.result.public_id + '.' + data.result.format + ')');
          $('#imgResult').modal('show');
+        $('.progress-bar').css('width', '0%'); 
       })
       .bind('fileuploadprogress', function(e, data) { 
-        $('.progress_bar').css('width', Math.round((data.loaded * 100.0) / data.total) + '%'); 
+        $('.progress-bar').css('width', Math.round((data.loaded * 100.0) / data.total) + '%'); 
       });
 
    $("#imgUploader .modal-dialog .close").click(function(){
