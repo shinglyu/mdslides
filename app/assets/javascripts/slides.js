@@ -13,9 +13,11 @@ function refresh(){
      
       clearTimeout(timerId)
       var refreshTimeout = 2000 //ms
-      timerId = setTimeout(function(){
+      timerId = setTimeout( refreshNow, refreshTimeout)
+}
+
+function refreshNow(){
          $('.edit_slide').submit()
-      }, refreshTimeout)
 }
 
 function bindAutoRefresh(){
@@ -24,7 +26,7 @@ function bindAutoRefresh(){
 }
 
 function bindRefreshBtn(){
-   $('#refresh').click(refresh);
+   $('#refresh').click(refreshNow);
 }
 
 function startup(){

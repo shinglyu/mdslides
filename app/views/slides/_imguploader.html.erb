@@ -9,7 +9,7 @@
          <div class="modal-body">
 
          <%= form_tag(slide_path, :method => :post) do |f|  %>
-           <%= cl_image_upload_tag(:image_id) %>
+           <%= cl_image_upload_tag(:image_id, :tags =>[@slide.id]) %>
          <%  end %>
 
          <div class="progress">
@@ -34,9 +34,9 @@
            <h4 class="modal-title" id="imgResultLabel">Upload Finished</h4>
          </div>
          <div class="modal-body">
-           <h5>Please <em>paste</em> this code to where you want the image to be.</h5>
+           <h4>Please <b>paste</b> this code to where you want the image to be.</h4>
            <div class="well">
-             <h4 id='imgCode'></h4>
+             <p id='imgCode'></p>
            </div>
          </div>
          <div class="modal-footer">

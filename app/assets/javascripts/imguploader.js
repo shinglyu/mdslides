@@ -16,11 +16,6 @@ function bindImguploader(){
         $('.progress-bar').css('width', Math.round((data.loaded * 100.0) / data.total) + '%'); 
       });
 
-   $("#imgUploader .modal-dialog .close").click(function(){
-         var uploadHtml = '<%= form_tag(slide_path, :method => :post) do |f|  %> <%= cl_image_upload_tag(:image_id) %> <%  end %>' 
-         $("#imgUploader .modal-dialog .modal-body").html(uploadHtml);
-   });
-
 }
 addLoadEvent(bindImguploader);
 
