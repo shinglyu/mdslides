@@ -19,3 +19,4 @@ function bindImguploader(){
 }
 addLoadEvent(bindImguploader);
 
+
